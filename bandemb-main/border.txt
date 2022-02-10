@@ -1,0 +1,169 @@
+@keyframes box-shadow {
+    0% {
+        box-shadow: 0px 4px 11px var(--blue);
+    }
+    5% {
+        box-shadow: 1px 6px 11px var(--orange);
+    }
+    10% {
+        box-shadow: 2px 8px 11px var(--green);
+    }
+    15% {
+        box-shadow: 3px 10px 11px var(--blue);
+    }
+    20% {
+        box-shadow: 4px 12px 11px var(--blue);
+    }
+    25% {
+        box-shadow: 5px 14px 11px var(--white);
+    }
+    30% {
+        box-shadow: 4px 12px 11px var(--green);
+    }
+    35% {
+        box-shadow: 3px 10px 11px var(--blue);
+    }
+    40% {
+        box-shadow: 2px 8px 11px var(--blue);
+    }
+    45% {
+        box-shadow: 1px 6px 11px var(--orange);
+    }
+    50% {
+        box-shadow: 0px 4px 11px var(--green);
+    }
+    55% {
+        box-shadow: -1px 0px 11px var(--blue);
+    }
+    60% {
+        box-shadow: -2px -4px 11px var(--blue);
+    }
+    65% {
+        box-shadow: -3px -8px 11px var(--white);
+    }
+    70% {
+        box-shadow: -4px -10px 11px var(--green);
+    }
+    75% {
+        box-shadow: -5px -12px 11px var(--blue);
+    }
+    80% {
+        box-shadow: -4px -10px 11px var(--blue);
+    }
+    85% {
+        box-shadow: -3px -8px 11px var(--white);
+    }
+    90% {
+        box-shadow: -2px -6px 11px var(--green);
+    }
+    95% {
+        box-shadow: -1px -4px 11px var(--blue);
+    }
+    100% {
+        box-shadow: -0px 0px 11px var(--blue);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes box-shadow {
+    0% {
+        -webkit-text-stroke: 4px var(--green);
+    }
+    25% {
+        -webkit-text-stroke: 4px var(--purple);
+    }
+    50% {
+        -webkit-text-stroke: 4px var(--blue);
+    }
+    75% {
+        -webkit-text-stroke: 4px var(--green);
+    }
+    100% {
+        -webkit-text-stroke: 4px var(--purple);
+    }
+}
+
+
+
+
+
+@keyframes make {
+    0% {
+        content: 'GOOFY';
+    }
+    10% {
+        content: 'WEIRD';
+    }
+    20% {
+        content: 'SCREWY';
+    }
+    30% {
+        content: 'DITZY';
+    }
+    40% {
+        content: 'SILLY';
+    }
+    50% {
+        content: 'CRAZY';
+    }
+    60% {
+        content: 'WACKY';
+    }
+    70% {
+        content: 'DOPEY';
+    }
+    85% {
+        content: 'STUPID';
+    }
+    90% {
+        content: 'NUTTY';
+    }
+    95% {
+        content: 'IDIOTIC';
+    }
+    100% {
+        content: 'KOOKY';
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

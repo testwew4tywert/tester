@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="anme">
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+    </div>
+    <nav>
+        <div class="main-1">
+        </div>
+        <div class="main-2">
+            <a href="purchase.html">
+                <button id="ok-3">Projects</button></a>
+        </div>
+        <div class="main-3">
+            <button id="ok-4" onclick="dome5();dome2();">Membership</button></div>
+        <div class="main-4">
+            <img id="ok-2" src="cute4.png" alt="cute4" onclick="dome3();dome6();">
+        </div>
+    </nav>
+    <div id="image">
+        <img id="image-2" src="cute5.png" alt="profile">
+        <h1 id="flower"><span id="one">X</span>-<span id="two">Flower</span></h1>
+        <p id="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam accusantium est veniam nostrum quo?</p>
+        <button id="button-2" onclick="dome();dome2();">Details</button>
+        <button id="button-1" onclick="dome2()">Close</button>
+    </div>
+    <div id="more">
+
+        <img id="image2-2" src="cute5.png" alt="profile">
+        <h1 id="flower2"><span id="one2">X</span>-<span id="two2">Flower</span></h1>
+        <p id="p1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi suscipit illum necessitatibus commodi earum eveniet nostrum, vel animi ad mollitia veniam explicabo labore quisquam repellat reiciendis alias maxime saepe. Consequatur.</p>
+        <button id="button2-2" onclick="dome3();dome4()">Less</button>
+        <button id="button2-1" onclick="dome4()">Close</button>
+    </div>
+
+
+    <section id="selection">
+        <div class="container">
+            <div class="main">
+                <h1 id="h1-1">Zen<span id="one3">-</span><span id="two3">Z</span></h1>
+                <h1 id="h1-2">FREE MEMBERSHIP !!!</h1>
+
+            </div>
+            <div class="forForm">
+                <form>
+                    <input type="number" name="UserID" id="UserID" placeholder="UserID" required>
+                    <input type="password" name="UserPassword" id="UserPassword" placeholder="Password" required>
+                </form>
+                <div class="buts">
+                    <button id="button2" onclick="nothing()">Login</button>
+                    <button id="button3" onclick="document.getElementById('selection').style.display='none'">Close</button>
+                </div>
+                <a href="#">Don't have an account?</a>
+                <a href="#">Forget password?</a>
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </section>
+
+
+    <script src="node.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        function nothing() {
+            swal("This is the database of the World's internet, What do you want to do? ", {
+                    buttons: {
+                        cancel: "Abort!",
+                        catch: {
+                            text: "Enter as an employee!",
+                            value: "catch",
+                            dangerMode: true
+                        },
+                        risk: true,
+                    },
+                })
+                .then((value) => {
+                    switch (value) {
+
+                        case "risk":
+                            swal("Warning!", "Into the database!", "info");
+                            break;
+
+                        case "catch":
+                            swal("success", "Login sucessfully!", "success");
+                            break;
+
+                        default:
+                            swal("Got away sucessfully!");
+                    }
+                });
+        }
+    </script>
+</body>
+
+</html>

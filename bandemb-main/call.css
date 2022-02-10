@@ -1,0 +1,175 @@
+:root {
+    --white: #b3b389;
+    --black: #141414;
+    --orange: #FF9700;
+    --red: #E50914;
+    --lred: #f7797d;
+    --green: #2ecc71;
+    --blue: #3498db;
+    --purple: #c471ed;
+    --skin: #fdb35d;
+    --lgreen: #A5FECB;
+    --font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #2196f3;
+    overflow: hidden;
+}
+
+.loader {
+    position: relative;
+    display: flex;
+}
+
+.loader span {
+    width: 50px;
+    height: 300px;
+    margin: 0 20px;
+    background: #2196f3;
+    animation: animate 1.4s linear infinite;
+}
+
+@media only screen and (max-width:768px) {
+    .loader span {
+        width: 20px;
+        height: 130px;
+        margin: 0 10px;
+    }
+}
+
+.loader span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.loader span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.loader span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.loader span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.loader span:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+.loader span:nth-child(6) {
+    animation-delay: 1s;
+}
+
+.loader span:nth-child(7) {
+    animation-delay: 1.2s;
+}
+
+@keyframes animate {
+    0% {
+        box-shadow: 0 0 0 rgba(0, 0, 0, .5);
+        transform: translatex(-50px) scale(1);
+        opacity: 0;
+    }
+    50% {
+        box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
+        transform: translatex(0px) scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        box-shadow: 0 0 0 rgba(0, 0, 0, .5);
+        transform: translatex(50px) scale(1);
+        opacity: 0;
+    }
+}
+
+nav {
+    top: 0%;
+    position: absolute;
+    width: 100%;
+    height: 75px;
+    z-index: 100;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width:768px) {
+    nav {
+        height: 45px;
+    }
+}
+
+.main-3 {
+    width: 100%;
+    height: 100%;
+    margin: 0px 2em;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width:768px) {
+    .main-3 {
+        margin: 0px 1.2em;
+    }
+}
+
+a {
+    position: relative;
+    font-family: var(--font);
+    border-radius: 18px;
+    border: none;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: all 0.5s;
+}
+
+@media only screen and (max-width:768px) {
+    a {
+        padding: 4px 14px;
+        border-radius: 14px;
+    }
+}
+
+a#btn-2,
+a#btn-1 {
+    color: var(--green);
+    background-color: white;
+}
+
+a:hover#btn-1,
+a:hover#btn-2 {
+    background-color: var(--green);
+    color: white;
+}
+
+a:focus#btn-1,
+a:focus#btn-2 {
+    background-color: var(--green);
+    color: white;
+}
+
+a#btn-3 {
+    background-color: white;
+    color: var(--lred);
+}
+
+a:hover#btn-3 {
+    background-color: var(--lred);
+    color: white;
+}
+
+a:focus#btn-3 {
+    background-color: var(--lred);
+    color: white;
+}
